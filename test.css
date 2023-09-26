@@ -1,0 +1,34 @@
+.projects .content .wrapper {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: [col] 250px [col] 250px [col] 250px [col] 250px;
+  grid-template-rows: [row] auto [row] auto [row];
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.projects .content .box {
+  background-color: #fff;
+  color: var(--other);
+  border-radius: 25px;
+  padding: 175px;
+  font-size: 150%;
+}
+
+.projects .content .a {
+  grid-column: col / span 4;
+  grid-row: row 1;
+  background-color: var(--c1);
+}
+
+.projects .content .b {
+  grid-column: col / span 4;
+  grid-row: row 2;
+  background-color: var(--c2);
+}
+
+.projects .content .c {
+  grid-column: col / span 4;
+  grid-row: row 3;
+  background-color: var(--c3);
+}
