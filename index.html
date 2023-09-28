@@ -21,7 +21,7 @@
       <a href="#home" class="navbar-logo">Abian Ramzy</a>
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="#portofolio">Portofolio</a>
         <a href="#blog">Blog</a>
       </div>
@@ -128,9 +128,80 @@
               </div>
             </div>
           </div>
+          <div class="item c">
+            <div class="wrapper">
+              <div class="box1">
+                <img
+                  src="https://i.postimg.cc/k51V94Mn/Home-1-l.png"
+                  alt="locadin"
+                />
+              </div>
+              <div class="box2">
+                <h1>Locadin</h1>
+                <p>
+                  Locadin is an application that allows users to share food and
+                  drink recommendations, menus, prices, and other information to
+                  make it easier for them.
+                </p>
+                <a href="#" class="cta"
+                  >Details <i class="arrow-right" data-feather="arrow-right"></i
+                ></a>
+                <div class="box-figma">Figma</div>
+              </div>
+            </div>
+          </div>
         </div>
         <a href="#" class="cta">View all my projects</a>
       </main>
+    </section>
+
+    <section id="form" class="form">
+      <div class="container">
+        <div class="title">Contact</div>
+        <form>
+          <span class="details">Name:</span>
+          <input
+            id="name"
+            class="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <span class="details">Phone:</span>
+          <input
+            id="city"
+            class="city"
+            type="text"
+            placeholder="Phone"
+            required
+          />
+          <span class="details">Email:</span>
+          <input
+            id="email"
+            class="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <span class="details">Message:</span>
+          <input
+            id="message"
+            class="message"
+            type="text"
+            placeholder="Message"
+            required
+          />
+          <button
+            onclick="handleGetFormData()"
+            id="submit-form"
+            type="submit"
+            class="btn"
+            value="register"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
     </section>
 
     <footer>
