@@ -1,0 +1,337 @@
+:root {
+  --primary: #393646;
+  --secondary: #4f4557;
+  --info: #6d5d6e;
+  --other: #f4eee0;
+  --c1: #900c3f;
+  --c2: #1a4d2e;
+  --c3: #00337c;
+  --php: #787cb5;
+  --mysql: #f29111;
+  --laravel: #f05340;
+  --dart: #46b9f4;
+  --flutter: #64c7f6;
+  --firebase: #ffa611;
+  --figma: #ae4dff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--primary);
+  color: var(--other);
+  /* min-height: 2000px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: var(--primary);
+  border-bottom: 0.1px solid var(--info);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navbar-logo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--other);
+  position: absolute;
+  left: 22rem;
+}
+
+.navbar .navbar-nav a {
+  color: var(--info);
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--other);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid var(--other);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra {
+  position: absolute;
+  left: 63.8rem;
+}
+
+.navbar .navbar-extra a {
+  color: var(--info);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--other);
+}
+
+.nav-github {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-twitter {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.projects {
+  background: var(--primary);
+}
+
+.projects h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--other);
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.projects .content {
+  text-align: center;
+  padding: 1rem 0 3rem;
+}
+
+.projects .content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .container .item {
+  height: 23rem;
+  width: 77rem;
+  border-radius: 1rem;
+}
+
+.projects .container .a {
+  background: var(--php);
+  margin-bottom: 3rem;
+}
+
+.projects .container .a .wrapper {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.projects .a .box1 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 39;
+}
+
+.projects .a .box1 img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 15.4rem;
+  height: 20.5rem;
+  margin-left: 5rem;
+}
+
+.projects .a .box2 {
+  grid-column: 2 / 5;
+  grid-row: 5 / 39;
+  /* background: var(--primary); */
+}
+
+.projects .a .box2 .cta {
+  margin-left: 15rem;
+  margin-top: 8.7rem;
+  font-size: 1rem;
+  color: var(--other);
+  border: none;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  line-height: 40px;
+  transition: 2s;
+}
+
+.projects .a .box2 .cta:hover::before {
+  width: 200px;
+}
+
+.projects .a .box2 .cta:hover {
+  color: var(--info);
+}
+
+.projects .a .box2 .arrow-right {
+  width: 11px;
+  height: 11px;
+}
+
+.projects .a .box2 p {
+  max-width: 40rem;
+  position: absolute;
+  margin-left: 8rem;
+}
+
+footer {
+  border-top: 0.1px solid var(--info);
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 3rem 0 5rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .github {
+  width: 20px;
+  height: 20px;
+}
+
+footer .linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+footer .twitter {
+  width: 20px;
+  height: 20px;
+}
+
+footer .instagram {
+  width: 20px;
+  height: 20px;
+}
+
+footer .socials a {
+  color: var(--other);
+  margin: 1rem;
+}
+
+footer .socials a:hover {
+  color: var(--info);
+}
+
+footer .copyright {
+  font-size: 0.9rem;
+}
+
+footer .copyright p {
+  color: var(--other);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+footer .copyright a {
+  color: var(--other);
+  font-weight: 700;
+}
+
+footer .copyright a:hover {
+  color: var(--info);
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .navbar .navbar-logo {
+    position: absolute;
+    left: 10rem;
+  }
+  .navbar .navbar-extra {
+    display: none;
+  }
+  .projects .a .box1 img {
+    width: 15rem;
+    height: 19.6rem;
+  }
+}
+
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar .navbar-logo {
+    position: absolute;
+    left: 3rem;
+  }
+  .navbar .navbar-extra {
+    display: none;
+  }
+  .projects .container .a {
+    max-width: 35rem;
+  }
+  .projects .a .box1 img {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 1rem;
+  }
+  .projects .a .box2 .box-php {
+    display: none;
+  }
+  .projects .a .box2 .box-mysql {
+    display: none;
+  }
+  .projects .a .box2 .box-laravel {
+    display: none;
+  }
+  .projects .a .box2 .cta {
+    margin-left: -5rem;
+    margin-top: 4.5rem;
+    position: absolute;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar .navbar-logo {
+    position: absolute;
+    left: 10rem;
+  }
+  .navbar .navbar-extra {
+    display: none;
+  }
+  .projects .container .a {
+    max-width: 1rem;
+  }
+}
